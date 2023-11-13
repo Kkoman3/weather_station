@@ -1,0 +1,143 @@
+/* style.css */
+/*--------Header*/
+header {
+    background-color: #9e0915; /* Màu đỏ (Hex: #ff0000) */
+    color: #fff;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px; /* Kích thước chữ lớn hơn */
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px; /* Kích thước chữ lớn hơn */
+}
+
+/*-----------Chart*/
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#canvas{
+    width: 100%;
+}
+
+.title{
+    color: #9e0915;
+}
+
+/* -------------- TABLE STYLE */
+.styled-table {
+  border-collapse: collapse;
+  margin-left: auto; 
+  margin-right: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  overflow: hidden;
+  width: 90%;
+}
+
+.styled-table thead tr {
+  background-color: #9e0915;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.bdr {
+  border-right: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+}
+
+td:hover {background-color: rgba(12, 105, 128, 0.21);}
+tr:hover {background-color: rgba(12, 105, 128, 0.15);}
+.styled-table tbody tr:nth-of-type(even):hover {background-color: rgba(12, 105, 128, 0.15);}
+/* ----------------------------------- */
+
+/* ----------------------------------- BUTTON STYLE */
+.btn-group .button {
+  background-color: #9e0915; /* Green */
+  border: 1px solid #e3e3e3;
+  color: white;
+  border-radius: 0.5em;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  float: center;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #d31e2d;
+}
+
+.btn-group .button:active {
+  background-color: #9e0915;
+  transform: translateY(1px);
+}
+
+.btn-group .button:disabled,
+.button.disabled{
+  color:#fff;
+  background-color: #a0a0a0; 
+  cursor: not-allowed;
+  pointer-events:none;
+}
+/* ----------------------------------- */
